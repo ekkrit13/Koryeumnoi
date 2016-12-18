@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detail"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/IMVpicbook"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:background="#ededed"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/BTConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save this Book for Rent"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:background="#31b9a3"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/IMVpicbook"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/TVNameBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#FF1BAF96"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_below="@+id/BTConfirm"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:id="@+id/TVISBNTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ISBN: "
+        android:textSize="16sp"
+        android:layout_below="@+id/TVNameBook"
+        android:layout_marginLeft="30dp"  />
+
+    <TextView
+        android:id="@+id/TVISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/TVISBNTitle"
+        android:layout_below="@+id/TVNameBook" />
+
+    <TextView
+        android:id="@+id/TVCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ประเภท: "
+        android:textSize="16dp"
+        android:layout_below="@+id/TVISBNTitle"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:id="@+id/TVCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:layout_below="@+id/TVISBNTitle"
+        android:layout_toEndOf="@id/TVCategoryTitle"/>
+
+    <TextView
+        android:id="@+id/TVDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รายละเอียด: "
+        android:layout_marginTop="12dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/TVCategory"
+        android:layout_marginLeft="30dp"  />
+
+    <TextView
+        android:id="@+id/TVDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/TVDetailTitle"/>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/cover"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_toRightOf="@+id/cover"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:textColor="#FF1BAF96"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/isbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cover"
+                android:layout_below="@+id/title"
+                android:layout_marginBottom="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/rent_date_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cover"
+                android:layout_below="@+id/isbn"
+                android:text="วันที่ยืม : "
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/rent_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_below="@+id/isbn"
+                android:layout_toEndOf="@+id/rent_date_t" />
+
+            <TextView
+                android:id="@+id/deadline_date_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="กำหนดคืน : "
+                android:textSize="12dp"
+                android:layout_below="@+id/rent_date_t"
+                android:layout_toEndOf="@+id/cover" />
+
+            <TextView
+                android:id="@+id/deadline_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="#ff0400"
+                android:layout_below="@+id/rent_date_t"
+                android:layout_toEndOf="@+id/deadline_date_t" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>
